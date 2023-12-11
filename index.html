@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+      xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wake up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/stylecss.css">
+    <link rel="stylesheet" href="js/script.js">
+    <link rel="stylesheet" href="css/aos.css">
+
+
+</head>
+
+<body>
+<div class="page-loader"></div>
+
+<header class="header">
+    <a href="#" class ="logo" > <img src="img/wakeup%20(1)-modified.png" width="70"> <span class="l">W</span>akeUp Coffee </a>
+
+       <!-- <a href="#" class ="logo1"> Wake Up Coffee</a><-->
+
+<div class="nav">
+    <nav class="navbar">
+        <a href="#home" > Home </a>
+        <a href="#about" > About </a>
+        <a href="#menu" > Menu </a>
+        <a href="#feedback">Feedback</a>
+        <a href="#team" > team </a>
+        <a href="#contct" > contact Us</a>
+
+    </nav>
+</div>
+    <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-bars" id="menu-btn"></div>
+      <!--<a href="#login-form"> <button class="fa fa-sign-in" onclick="document.getElementById('login-form').style.display='block'"
+                                    style="width: auto;"><span class="log">login</span></button> </a>-->
+        <button class="fa fa-sign-in" onclick="openForm()"></button>
+
+    </div>
+
+
+
+
+
+
+    <div class="search-form">
+        <a href="" target="_blank" hidden></a>
+
+        <input type="search" id="search-box" placeholder="search...">
+
+        <label for="search-box" class="fas fa-search"></label>
+
+    </div>
+
+
+    <div class="itemscart">
+        <div class="cart"></div>
+<span class="fas-fa-times"></span>
+    </div>
+    </div>
+
+    </div>
+
+
+
+</header>
+
+
+
+
+
+
+
+<section class="home-section" id="home">
+    <div class="home-bg"></div>
+    <div class="container">
+        <div class="row min-vh-100 align-items-center">
+            <div class="home-text" data-aos="fade-up" data-aos-duration="2000">
+                <h1>WakeUp </h1>
+                <p>Anytime You want To Wakeup You will Find <span class="wake">WAKEUP</span></p>
+                <a href="#menu" class="menu-btnn menu-btnn-default" data-aos="fade-right" data-aos-duration="2000"> Menu</a>
+                <br>
+                <br>
+                <button class="menu-btnn menu-btnn-default" onclick="openf()" data-aos="fade-left" data-aos-duration="2000" name="reserve"> Reserve Table </button>
+
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about-section sec-padding" id="about">
+    <div class="container ">
+        <div class="row">
+            <div class="section-title" data-aos="fade-down" data-aos-duration="1000">
+                <h2 data-title="our story"> About Us</h2>
+            </div>
+            </div>
+            <div class="row">
+                <div class="about-text" data-aos="fade-right" data-aos-duration="1000">
+                    <h3>Welcome to wakeup coffee</h3>
+                    <p>Welcome to the best place to get your favorite drink! We can make your drink with ingredients of your choice, even if it wasn't on the menu!</p>
+                    <a href="#menu" class="menu-btnn menu-btnn-default"> Check Our Menu</a>
+                </div>
+                <div class="about-img">
+                <div class="img-box">
+                   <!-- <h3> many years of experience</h3> -->
+                 <!-- <img src="img/coffee.jpg" height="300px"  alt="about"> -->
+            </div>
+                </div>
+        </div>
+    </div>
+</section>
+
+<section class="menu-section sec-padding" id="menu">
+    <div class="container">
+        <div class="row">
+            <div class="section-title" data-aos="fade-up" data-aos-duration="1000">
+                <h2 data-title="Order Now">Menu</h2>
+            </div>
+            </div>
+            <div class="row">
+                <div class="menu-tabs" data-aos="fade-up" data-aos-duration="1000">
+                    <button type="button" class="menu-tabs-item active" data-target="#hot-drink">Hot Drinks</button>
+                    <button type="button" class="menu-tabs-item" data-target="#cold-drink">Cold Drinks</button>
+                    <button type="button" class="menu-tabs-item" data-target="#milkshake">Milkshake</button>
+                    <button type="button" class="menu-tabs-item" data-target="#frapccino">Frappuccino</button>
+                
+                    <button type="button" class="menu-tabs-item" data-target="#sweet-dessert">Desserts</button>
+                </div>
+            </div>
+
+            <div class="row menu-tabs-content active" id="hot-drink">
+                <div class="menu-item" data-aos="fade-up-right" data-aos-duration="1000">
+                    <div class="menu-item-tittle">
+                        <img src="img/cof.jpeg" alt="coffe-photo" width="77px" height="75px">
+                        <h3 name="coff">Coffe</h3>
+                    </div>
+                 <div class="menu-item-price">
+                    4 <span class="wake">|</span> 6
+                       <br>
+
+
+                 </div>
+                </div>
+                    <div class="menu-item" data-aos="fade-up-right" data-aos-duration="1000">
+                        <div class="menu-item-tittle">
+                            <img src="img/americano.jfif" alt="hot-choclate-photo" width="77px" height="75px">
+                            <h3>Americano</h3>
+                        </div>
+                        <div class="menu-item-price">
+                            6 <span class="wake">|</span> 10
+                            <br>
+
+                        </div>
+
+
+
+                </div>
+                <div class="menu-item" data-aos="fade-up-right" data-aos-duration="1000">
+                    <div class="menu-item-tittle">
+                        <img src="img/french.jpg" alt="hot-choclate-photo" width="77px" height="75px">
+                        <h3>French Vanilla</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        6 <span class="wake">|</span> 10
+                        <br>
+
+                    </div>
+
+                </div>
+                <div class="menu-item" data-aos="fade-up-right" data-aos-duration="1000">
+                    <div class="menu-item-tittle">
+                        <img src="img/hotmocha.jfif" alt="hot-choclate-photo" width="77px" height="75px">
+                        <h3>Hot Mocha</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        7 <span class="wake">|</span> 12
+                        <br>
+
+                    </div>
+
+                </div>
+
+                <div class="menu-item" data-aos="fade-up-left" data-aos-duration="1000">
+                    <div class="menu-item-tittle">
+                        <img src="photo/tea.jpg" alt="tea-photo" width="77px" height="75px">
+                        <h3>Tea</h3>
+                    </div>
+                        <div class="menu-item-price">  
+                            3 <span class="wake">|</span> 5
+                            <br>
+
+                        </div>
+                     
+
+                       
+                </div>
+                <div class="menu-item" data-aos="fade-up-right" data-aos-duration="1000">
+                    <div class="menu-item-tittle">
+                        <img src="photo/hot-choclate.jpg" alt="hot-choclate-photo" width="77px" height="75px">
+                        <h3>Hot Choclate</h3>
+                    </div>
+                        <div class="menu-item-price">
+                            6 <span class="wake">|</span> 12
+                             <br>
+
+                        </div>
+                      
+                </div>
+                <div class="menu-item" data-aos="fade-up-right" data-aos-duration="1000">
+                    <div class="menu-item-tittle">
+                        <img src="img/capp.jpeg" alt="hot-choclate-photo" width="77px" height="75px">
+                        <h3> Cappuccino</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        6 <span class="wake">|</span> 12
+                        <br>
+
+                    </div>
+
+                </div>
+
+                <div class="menu-item" data-aos="fade-up-left" data-aos-duration="1000">
+                    <div class="menu-item-tittle">
+                        <img src="photo/italian-hot-chocloate.jpg" alt="italin-hot-choclate-photo" width="77px" height="75px">
+                        <h3>Italin Hot Choclate</h3>
+                    </div>
+                        <div class="menu-item-price">
+                            6 <span class="wake">|</span> 10
+                             <br>
+
+                        </div>
+                      
+                </div>
+                <div class="menu-item" data-aos="fade-up-right" data-aos-duration="1000">
+                    <div class="menu-item-tittle">
+                        <img src="photo/hot-lotus.jpg" alt="hot-lotus-photo" width="77px" height="75px">
+                        <h3>Hot Lotus</h3>
+                    </div>
+                        <div class="menu-item-price">
+                           7 </button> <span class="wake">|</span> 12
+                             <br>
+
+                        </div>
+                      
+                </div>
+                <div class="menu-item" data-aos="fade-up-left" data-aos-duration="1000">
+                    <div class="menu-item-tittle">
+                        <img src="photo/espresso.jpg" alt="espresso-photo" width="77px" height="75px">
+                        <h3>Espresso</h3>
+                    </div>
+                        <div class="menu-item-price">
+                            5 </button> <span class="wake">|</span> 8
+                            <br>
+
+                        </div>
+                       
+                </div>
+                <div class="menu-item" data-aos="fade-up-right" data-aos-duration="1000">
+                    <div class="menu-item-tittle">
+                        <img src="photo/nescafe.jpg" alt="nescafe-photo" width="77px" height="75px">
+                        <h3>Nescafe</h3>
+                    </div>
+                        <div class="menu-item-price">
+                            5 <span class="wake">|</span> 10
+                             <br>
+
+                        </div>
+                      
+                </div>
+            </div>
+            <div class="row menu-tabs-content" id="cold-drink">
+                <div class="menu-item" data-aos="fade-up-right" data-aos-duration="1000">
+                    <div class="menu-item-tittle">
+                        <img src="photo/Iced-coffee.jpg" alt="ice-coffe-photo" width="77px" height="75px">
+                        <h3>Ice Coffe</h3>
+                    </div>
+                        <div class="menu-item-price">
+                            6 </button> <span class="wake">|</span> 8
+                             <br>
+
+                        </div>
+                      
+                </div>
+                <div class="menu-item" data-aos="fade-up-left" data-aos-duration="1000">
+                    <div class="menu-item-tittle">
+                        <img src="img/ice.jpeg" alt="ice-tea-photo" width="77px" height="75px">
+                        <h3>Ice tropicana</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        8 <span class="wake">|</span> 12
+                        <br>
+
+                    </div>
+
+                </div>
+                <div class="menu-item" data-aos="fade-up-left" data-aos-duration="1000">
+                    <div class="menu-item-tittle">
+                        <img src="photo/ice-tea.jpg" alt="ice-tea-photo" width="77px" height="75px">
+                        <h3>Ice Tea</h3>
+                    </div>
+                        <div class="menu-item-price">
+                           6 <span class="wake">|</span> 8
+                             <br>
+
+                        </div>
+                      
+                </div>
+                <div class="menu-item" data-aos="fade-up-right" data-aos-duration="1000">
+                    <div class="menu-item-tittle">
+                        <img src="photo/ice-strawberry.jpg" alt="ice-trawberry-photo" width="77px" height="75px">
+                        <h3>Ice Strawberry</h3>
+                    </div>
+                        <div class="menu-item-price">
+                            6 </button> <span class="wake">|</span> 8
+                             <br>
+
+                        </div>
+                      
+                </div>
+                <div class="menu-item" data-aos="fade-up-left" data-aos-duration="1000">
+                    <div class="menu-item-tittle">
+                        <img src="photo/ice-oreo.jpg" alt="ice-oreo-photo" width="77px" height="75px">
+                        <h3>Ice Oreo</h3>
+                    </div>
+                        <div class="menu-item-price">
+                            6 </button> <span class="wake">|</span> 10
+                             <br>
+
+                        </div>
+                      
+                </div>
+                <div class="menu-item" data-aos="fade-up-right" data-aos-duration="1000">
+                    <div class="menu-item-tittle">
+                        <img src="photo/ice-lemon-pink.jpg" alt="ice-lemon-pink-photo" width="77px" height="75px">
+                        <h3>Ice Lemon Pink</h3>
+                    </div>
+                        <div class="menu-item-price">
+                            6 <span class="wake">|</span> 8
+                             <br>
+
+                        </div>
+                      
+                </div>
+                <div class="menu-item" data-aos="fade-up-left" data-aos-duration="1000">
+                    <div class="menu-item-tittle">
+                        <img src="photo/ice-caramel.jpg" alt="icce-caramel-photo" width="77px" height="75px">
+                        <h3>Ice Caramel</h3>
+                    </div>
+                        <div class="menu-item-price">
+                            8 <span class="wake">|</span> 12
+                            <br>
+
+                        </div>
+                       
+                </div>
+            </div>
+
+            <div class="row menu-tabs-content" id="milkshake">
+                <div class="menu-item" data-aos="fade-up-right" data-aos-duration="1000">
+                    <div class="menu-item-tittle">
+                        <img src="photo/nutella-milkshake.jpg" alt="nutella-milkshake-photo" width="77px" height="75px">
+                        <h3>Nutella MilkSHake</h3>
+                    </div>
+                        <div class="menu-item-price">
+                            10 <span class="wake">|</span> 15
+                             <br>
+
+                        </div>
+                      
+                </div>
+                <div class="menu-item" data-aos="fade-up-left" data-aos-duration="1000">
+                    <div class="menu-item-tittle">
+                        <img src="photo/pistacio-milkshake.jpg" alt="pistacio-milkshake-photo" width="77px" height="75px">
+                        <h3>Pistachio MilkSHake</h3>
+                    </div>
+                        <div class="menu-item-price">
+                            15 <span class="wake">|</span> 20
+                            <br>
+
+                        </div>
+                       
+                </div>
+                <div class="menu-item" data-aos="fade-up-right" data-aos-duration="1000">
+                    <div class="menu-item-tittle">
+                        <img src="photo/oreo-milkshake.jpg" alt="oreo-milkshake-photo" width="77px" height="75px">
+                        <h3>Oreo MilkSHake</h3>
+                    </div>
+                        <div class="menu-item-price">
+                            10 <span class="wake">|</span> 15
+                             <br>
+
+                        </div>
+                      
+                </div>
+                <div class="menu-item" data-aos="fade-up-left" data-aos-duration="1000">
+                    <div class="menu-item-tittle">
+                        <img src="photo/blueberry-milkshake.jpg" alt="blueberry-milkshhake-photo" width="77px" height="75px">
+                        <h3>BlueBerry MilkSHake</h3>
+                    </div>
+                        <div class="menu-item-price">
+                            10 <span class="wake">|</span> 15
+                            <br>
+
+                        </div>
+                       
+                </div>
+                <div class="menu-item" data-aos="fade-up-right" data-aos-duration="1000">
+                    <div class="menu-item-tittle">
+                        <img src="photo/cerelac-milk-shake.webp" alt="cerelac-milkShake-photo" width="77px" height="75px">
+                        <h3>Cerelac MilkSHake</h3>
+                    </div>
+                        <div class="menu-item-price">
+                           12 <span class="wake">|</span> 17
+                            <br>
+
+                        </div>
+                       
+                </div>
+               
+            </div>
+
+            <div class="row menu-tabs-content" id="frapccino">
+                <div class="menu-item" data-aos="fade-up-right" data-aos-duration="1000">
+                    <div class="menu-item-tittle">
+                        <img src="photo/caramile-frabtiono.jpg" alt="caramile-Frappuccino-photo" width="77px" height="75px">
+                        <h3>Caramel Frappuccino</h3>
+                    </div>
+                        <div class="menu-item-price">
+                            15
+                             <br>
+
+                        </div>
+                       
+                </div>  
+                <div class="menu-item" data-aos="fade-up-left" data-aos-duration="1000">
+                    <div class="menu-item-tittle">
+                    <img src="photo/choclate-frabtiono.jpg" alt="choclate-Frappuccino-photo" width="77px" height="75px">
+                    <h3>Choclate Frappuccino</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        15
+                         <br>
+
+                    </div>
+                   
+            </div>
+                
+                <div class="menu-item" data-aos="fade-up-right" data-aos-duration="1000">
+                    <div class="menu-item-tittle">
+                
+                <img src="photo/lotus-frabtiono.jpg" alt="lotus-Frappuccino-photo" width="77px" height="75px">
+                <h3>Lotus Frappuccino</h3>
+            </div>
+                <div class="menu-item-price">
+                   15
+                     <br>
+
+                </div>
+               
+            </div>
+                
+            <div class="menu-item" data-aos="fade-up-left" data-aos-duration="1000">
+                 <div class="menu-item-tittle">
+            
+            <img src="photo/oreo-frabtiono.webp" alt="oreo-Frappuccino-photo" width="77px" height="75px">
+            <h3>Oreo Frappuccino</h3>
+        </div>
+            <div class="menu-item-price">
+              15
+                      <br>
+
+            </div>
+           
+        </div>
+            
+       <div class="menu-item" data-aos="fade-up-right" data-aos-duration="1000">
+           <div class="menu-item-tittle">
+        
+        <img src="photo/سولتد-كراميل.jpg" alt="Frappuccino-photo" width="77px" height="75px">
+        <h3>Salted Caramel</h3>
+    </div>
+        <div class="menu-item-price">
+            15
+             <br>
+
+        </div>
+       
+</div>
+            </div>
+       
+    
+
+            <div class="row menu-tabs-content" id="sweet-dessert">
+                <div class="menu-item" data-aos="fade-up-right" data-aos-duration="1000">
+                    <div class="menu-item-tittle">
+                        <img src="photo/donat.jpg" alt="dounte-photo" width="77px" height="75px">
+                        <h3>Donuts</h3>
+                    </div>
+                        <div class="menu-item-price">
+                            6
+                            <br>
+
+                        </div>
+                        
+                </div>  
+                <div class="menu-item" data-aos="fade-up-left" data-aos-duration="1000">
+                    <div class="menu-item-tittle">
+                    <img src="photo/vanilla-sandwich.jpg" alt="vanilla-photo" width="77px" height="75px">
+                    <h3>Vanilla Sandwitch</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        12
+                           <br>
+
+                    </div>
+                 
+            </div>
+                
+                <div class="menu-item" data-aos="fade-up-right" data-aos-duration="1000">
+                    <div class="menu-item-tittle">
+                
+                <img src="photo/redVelvet.jpg" alt="red-velvet-photo" width="77px" height="75px">
+                <h3>Red Velvvet</h3>
+            </div>
+                <div class="menu-item-price">
+                 20
+                    <br>
+
+                </div>
+                
+            </div>
+                
+            <div class="menu-item" data-aos="fade-up-left" data-aos-duration="1000">
+                 <div class="menu-item-tittle">
+            
+            <img src="photo/strawBerry-cheeseCake.jpg" alt="strawBerry-cake-photo" width="77px" height="75px">
+            <h3>StrawBerry Chesee Cake</h3>
+        </div>
+            <div class="menu-item-price">
+                20
+                 <br>
+
+            </div>
+           
+        </div>
+            
+       <div class="menu-item" data-aos="fade-up-right" data-aos-duration="1000">
+           <div class="menu-item-tittle">
+        
+        <img src="photo/waffeles.jpg" alt="waffel-photo" width="77px" height="75px">
+        <h3>Waffeles</h3>
+    </div>
+        <div class="menu-item-price">
+           17
+             <br>
+
+        </div>
+       
+</div>
+                <div class="menu-item" data-aos="fade-up-right" data-aos-duration="1000">
+                    <div class="menu-item-tittle">
+
+                        <img src="img/cook.jpeg" alt="waffel-photo" width="77px" height="75px">
+                        <h3>Cookies</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        17
+                        <br>
+
+                    </div>
+
+                </div>
+                <div class="menu-item" data-aos="fade-up-right" data-aos-duration="1000">
+                    <div class="menu-item-tittle">
+
+                        <img src="img/pancake.jpg" alt="waffel-photo" width="77px" height="75px">
+                        <h3>Pancakes</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        6
+                        <br>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+</section>
+<section class="feedback-section sec-padding" id="feedback">
+    <div class="container">
+        <div class="row">
+            <div class="section-title">
+                <h2 data-title="feedback" data-aos="fade-down">Some Feedback</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="feedback-item" data-aos="flip-down" data-aos-duration="1000">
+                <div class="feedback-author">
+                    <div class="feedback-author-name">
+                        <h3>Amna Othman</h3>
+                        <span>Biddya</span>
+                    </div>
+                    <div class="feedback-author-photo">
+                        <img src="photo/feed1.jpg" alt="Amna-photo" height="70px">
+                    </div>
+                </div>
+                <p>my perfect place</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+
+            <div class="feedback-item" data-aos="flip-up" data-aos-duration="1000">
+                <div class="feedback-author">
+                    <div class="feedback-author-name">
+                        <h3>Sama Fadda</h3>
+                        <span>Nablus</span>
+                    </div>
+                    <div class="feedback-author-photo">
+                        <img src="photo/feed2.jpg" alt="Sama-photo" height="70px">
+                    </div>
+                </div>
+                <p>i love coffe here</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <div class="feedback-item" data-aos="flip-down" data-aos-duration="1000">
+                <div class="feedback-author">
+                    <div class="feedback-author-name">
+                        <h3>Hadeel Darawsha</h3>
+                        <span>Ramallah</span>
+                    </div>
+                    <div class="feedback-author-photo">
+                        <img src="photo/haddel.jpg" alt="Amna-photo" height="70px">
+                    </div>
+                </div>
+                <p> i love it</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+
+            <div class="feedback-item" data-aos="flip-up" data-aos-duration="1000">
+                <div class="feedback-author">
+                    <div class="feedback-author-name">
+                        <h3>Aya Kanaan</h3>
+                        <span>Hebron</span>
+                    </div>
+                    <div class="feedback-author-photo">
+                        <img src="photo/aya.jpg" alt="Sama-photo" height="70px"> 
+                    </div>
+                </div>
+                <p>i love ice tea here</p>
+
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+
+            </div>
+            <form method="post" action="wake.php">
+            <div class="feedback" >
+
+                <textarea type="text" name="feedback" class="t" placeholder="write your feedback.."  cols="20" rows="5"></textarea>
+                <br>
+                <input type="file" class="f" placeholder="picture">
+
+                <input type="submit" placeholder="send" class="send" name="send">
+            </div>
+            </form>
+        </div>
+    </div>
+
+</section>
+
+<section class="team-section sec-padding" id="team">
+    <div class="container">
+        <div class="row">
+            <div class="section-title">
+                <h2 data-title="team"> Our Team</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="team-item" data-aos="flip-left" data-aos-duration="1000">
+                <img src="photo/team2.jpg" alt="team Photo" width="300px" height="500px">
+                <div class="team-item-info">
+                    <h2>25-july-2019</h2>
+                </div>
+            </div>
+
+            <div class="team-item" data-aos="flip-left" data-aos-duration="1000">
+                <img src="photo/team1.jpg" alt="team Photo"width="300px" height="500px" >
+                <div class="team-item-info">
+                    <h2>24-November-2020</h2>
+                </div>
+            </div>
+            <div class="team-item" data-aos="flip-left" data-aos-duration="1000">
+                <img src="photo/team3.jpg" alt="team Photo" width="400px" height="500px">
+                <div class="team-item-info">
+                    <h2>17-march-2021</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer" id="contct">
+    <div class="container">
+        <div class="row">
+            <div class="footer-item">
+                <h3> <i class="fas fa-map-marker-alt" style="color: white"></i> Location </h3>
+                <p>Nablus, Palestine <br>Our Branches: <br>-Rafidia<br>-down town<br>-academia<br>-city mall </p>
+            </div>
+            <div class="footer-item">
+                <h3><i class="far fa-clock" style="color: white">  </i> Opening Hours</h3>
+                <p> Every Day <br>9:00 AM - 11:00 PM</p>
+            </div>
+            <div class="footer-item">
+                <h3><i class="fa fa-envelope " style="color: white"> </i>  Contact Us </h3>
+                <a href="tel:0568138500"> call Now <i class="fa fa-phone" style="color: chocolate"></i></a> <br>
+                <a href="mailto:amenathmn@gmail.com">Send an Email <i class=" far fa-paper-plane" style="color: chocolate"></i></a>
+                <div class="social-link">
+                   <a target="blank" href="https://www.facebook.com/wakeupcoff/"><i class="fab fa-facebook"></i></a>
+                   <a  target="blank" href="https://instagram.com/wakeupcoff?igshid=YmMyMTA2M2Y="><i class="fab fa-instagram"></i></a>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="copyright">
+                &copy; 2022 - Designed By Amna & Sama 
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<script src="js/script.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/search.js"></script>
+<script src="js/search1.js"></script>
+
+</head>
+
+
+
+<!--<button class="open-button" onclick="openForm()">Open Form</button> -->
+<div class="form-popup" id="myForm">
+    <form method="post" action="login.php" class="form-container">
+        <button type="button" class=" close fa fa-close " style="color: black" onclick="closeF()"></button>
+<br>
+        <label ><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+
+        <label ><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <button type="submit" class="btn" name="login" >Login</button>
+        <button type="button" class="btn reg" onclick="register()">register</button>
+    </form>
+
+
+<div class="form-popup" id="my">
+    <form  action="wake.php" class="form-container" method="post">
+        <button type="button" class=" close fa fa-close " style="color: black " onclick="closeF()"></button>
+<br>
+        <label ><b>First Name</b></label>
+        <input type="text" placeholder="first name" name="first" id="first" required>
+
+        <label ><b>Last Name</b></label>
+        <input type="text" placeholder="last name" name="last" id="last "required>
+
+        <label ><b>Phone Number</b></label>
+        <input type="text" placeholder="phone number" name="phone" id="phone" required>
+
+        <label ><b>City</b></label>
+        <input type="text" placeholder="City" name="city" id="city "required>
+
+        <label ><b>Email</b></label>
+        <input type="text" placeholder="Email" name="email" id="email" required>
+
+        <label ><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+        <button type="submit"  name="signup" class="btn1">sign up</button>
+
+    </form>
+</div>
+
+</div>
+<div class="form-popup" id="reserve">
+
+<form  action="wake.php" class="form-container" method="post">
+    <button type="button" class=" close fa fa-close " style="color: black " onclick="closeF()"></button>
+    <br>
+    <label  style="font-size: small " ><b>No of people</b></label>
+    <input type="text" placeholder=" " name="num" id="num" required>
+
+    <label style="font-size: small "><b>date:</b></label>
+    <input type="date" placeholder=" " name="d" id="d "required>
+    <br>
+<br>
+    <label style="font-size: small " ><b>time: </b></label>
+    <input type="time" placeholder=" " name="t" id="t" required>
+<br>
+    <br>
+    <label style="font-size: small " ><b>email</b></label>
+    <input type="text" placeholder="email" name="e" id="e "required>
+
+    <label style="font-size: small " ><b>phone</b></label>
+    <input type="text" placeholder=" phone  " name="p" id="p" required>
+
+
+    <button type="submit"  name="reserve" class="btn1"> book table</button>
+
+</form>
+</div>
+
+
+
+<script>
+    function openf() {
+        document.getElementById("reserve").style.display = "block";
+    }
+    function openForm() {
+        document.getElementById("myForm").style.display = "block";
+    }
+
+    function register() {
+        document.getElementById("my").style.display = "block";
+    }
+
+    function closeF() {
+        document.getElementById("my").style.display = "none";
+        document.getElementById("myForm").style.display = "none";
+        document.getElementById("reserve").style.display = "none";
+
+    }
+</script>
+
+
+
+
+</body>
+</html>
